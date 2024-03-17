@@ -31,8 +31,7 @@
 #if (((CFG_TUSB_MCU == OPT_MCU_ESP32S2) ||  (CFG_TUSB_MCU == OPT_MCU_ESP32S3)) && TUSB_OPT_DEVICE_ENABLED)
 
 // Espressif
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "freertos/xtensa_api.h"
 #include "esp_intr_alloc.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
